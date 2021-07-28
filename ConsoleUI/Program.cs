@@ -16,34 +16,16 @@ namespace ConsoleUI
 
             //CarDtoDeneme();
 
-            BrandManager brandManager = new BrandManager(new EfBrandDal());
-           // brandManager.Add(new Brand { Name = "DenemeMarka" });
-            foreach (var brand in brandManager.GetAll())
-            {
-                Console.WriteLine(brand.Name);
-            }
-            
-        }
+            //BrandDeneme();
 
-        private static void CarDtoDeneme()
-        {
-            CarManager carManager = new CarManager(new EfCarDal());
-            foreach (var car in carManager.GetCarDetail())
-            {
-                Console.WriteLine(car.CarName + " ======== " + car.BrandName + " ========= " + car.ColorName);
-            }
-        }
-
-        private static CarManager GetCar()
-        {
             CarManager carManager = new CarManager(new EfCarDal());
 
-            foreach (var item in carManager.GetCarsByBrandId(1))
-            {
-                Console.WriteLine(item.ModelYear);
-            }
+            var result = carManager.GetCarDetail();
 
-            return carManager;
+            foreach (var car in result.Data)
+            {
+                Console.WriteLine(car.BrandName+"============="+car.ColorName);
+            }
         }
     }
 }
