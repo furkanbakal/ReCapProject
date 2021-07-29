@@ -17,6 +17,15 @@ namespace Business.Constants
         public static string ColorUpdated = "Renk başarıyla güncellendi";
         public static string CarPriceError = "HATA! Aracın günlük fiyatı 0'dan büyük olmalı";
         public static string CarNameError = "HATA! Araç açıklaması minimum 2 karakter olmalıdır!";
-
+        public static string CustomerAdded = "Müşteri başarıyla eklendi";
+        public static string CustomerDeleted = "Müşteri başarıyla silindi";
+        public static string CustomerUpdated = "Müşteri başarıyla güncellendi";
+        public static string UserAdded = "Kullanıcı başarıyla eklendi";
+        public static string UserDeleted = "Kullanıcı başarıyla silindi";
+        public static string UserUpdated = "Kullanıcı başarıyla güncellendi";
+        public static string RentalAdded = "Kiralama başarıyla eklendi";
+        public static string RentalDeleted = "Kiralama başarıyla silindi";
+        public static string RentalUpdated = "Kiralama başarıyla güncellendi";
+        public static string ReturnDateInvalid = "Kiralama başarısız! Araç müsait değil.";
     }
 }
