@@ -32,6 +32,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\Furkan\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Furkan\\source\\repos\\ReCapProject\\Core\\Core.csproj"
+              },
               "C:\\Users\\Furkan\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {
                 "projectPath": "C:\\Users\\Furkan\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj"
               },
@@ -66,6 +69,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[10.3.6, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.13, )"
             }
           },
           "imports": [
@@ -216,6 +223,18 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[10.3.6, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
