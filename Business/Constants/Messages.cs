@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -27,5 +29,12 @@ namespace Business.Constants
         public static string RentalDeleted = "Kiralama başarıyla silindi";
         public static string RentalUpdated = "Kiralama başarıyla güncellendi";
         public static string ReturnDateInvalid = "Kiralama başarısız! Araç müsait değil.";
+        public static string AuthorizationDenied = "Erişim yetkiniz yok! ";
+        public static string UserRegistered = "Kullanıcı kayıt işlemi başarılı.";
+        public static string UserNotFound = "Kullanıcı bulunamadı.";
+        public static string PasswordError = "Parola hatalı.";
+        public static string SuccessfulLogin = "Giriş işlemi başarılı.";
+        public static string UserAlreadyExists = "Kullanıcı zaten mevcut!";
+        public static string AccessTokenCreated = "Kullanıcı tokeni oluşturuldu.";
     }
 }
